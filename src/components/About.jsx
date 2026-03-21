@@ -5,12 +5,7 @@ import {
   Network,
   Zap,
   Globe,
-  Fingerprint,
-  Share2,
-  Layers,
-  Hexagon,
-  Link,
-  Cpu,
+  Fingerprint
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -38,7 +33,7 @@ const About = () => {
               </span>
             </h1>
 
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed max-w-2xl">
               Every day, billions of digital interactions fail because users
               land in the wrong place. We're fixing that with intelligent deep
               linking.
@@ -179,7 +174,7 @@ const About = () => {
           </motion.div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start mt-32">
+        <div className="grid lg:grid-cols-2 gap-16 items-start mt-20">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -191,7 +186,7 @@ const About = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 We exist to make every click count
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                 Founded in 2020, we've built the most sophisticated deep linking
                 infrastructure that powers connections for the world's leading
                 brands.
@@ -217,7 +212,7 @@ const About = () => {
               <div class="group relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
                 <div class="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
-                  <span class="text-sm font-medium transition-all duration-300">
+                  <span class="text-xs md:text-sm font-medium transition-all duration-300">
                     Universal Links
                   </span>
                 </div>
@@ -225,7 +220,7 @@ const About = () => {
               <div class="group relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
                 <div class="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
-                  <span class="text-sm font-medium  transition-all duration-300">
+                  <span class="text-xs md:text-sm font-medium  transition-all duration-300">
                     App Links
                   </span>
                 </div>
@@ -233,7 +228,7 @@ const About = () => {
               <div class="group relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
                 <div class="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
-                  <span class="text-sm font-medium  transition-all duration-300">
+                  <span class="text-xs md:text-sm font-medium  transition-all duration-300">
                     Deferred Deep Links
                   </span>
                 </div>
@@ -241,7 +236,7 @@ const About = () => {
               <div class="group relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
                 <div class="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
-                  <span class="text-sm font-medium  transition-all duration-300">
+                  <span class="text-xs md:text-sm font-medium  transition-all duration-300">
                     Contextual Routing
                   </span>
                 </div>
@@ -256,13 +251,13 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
               Traditional deep linking is broken. Users click links and end up
               on homepages, not the content they actually want. We've reimagined
               the entire experience.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
               Our intelligent routing engine considers device type, app
               installation status, user preferences, and historical behavior to
               deliver users to exactly the right destination - every single
@@ -270,7 +265,7 @@ const About = () => {
             </p>
 
             <div className="pt-4">
-              <button className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#9122cb] to-[#e47b63] text-white px-6 py-3 rounded-xl font-medium text-sm hover:shadow-xl transition-all duration-300">
+              <button className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#9122cb] to-[#e47b63] text-white px-6 py-3 rounded-xl font-medium text-xs md:text-base hover:shadow-xl transition-all duration-300">
                 Learn more about our platform
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>

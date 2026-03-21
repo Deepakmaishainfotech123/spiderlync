@@ -150,7 +150,7 @@ const Plans = () => {
           </h1>
           <p
             ref={subtitleRef}
-            className="mt-6 max-w-2xl mx-auto text-lg text-gray-400 font-normal"
+            className="mt-6 max-w-2xl mx-auto  text-sm md:text-base  text-gray-400 font-normal"
           >
             Everything you need to create, manage, and optimize links, QR codes,
             and deep linking — all in one platform.

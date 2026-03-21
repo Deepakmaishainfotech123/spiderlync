@@ -64,7 +64,7 @@ const DeepLinkingFeatures = () => {
             />
           </div>
           <h2 class="lg:text-4xl text-xl md:text-2xl font-bold">Powerful Deep Linking <span class="bg-[linear-gradient(90deg,rgba(235,120,101,1),rgba(138,26,212,0.71))] bg-clip-text text-transparent">Capabilities</span></h2>
-          <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-700 font-normal">
+          <p className="mt-6 max-w-2xl mx-auto text-sm md:text-base text-gray-700 font-normal">
             Connect users directly to content, track every interaction, and
             optimize campaigns with enterprise-grade deep linking
             infrastructure.
@@ -83,7 +83,7 @@ const DeepLinkingFeatures = () => {
                 key={index}
                 className="group relative bg-white   p-8 transition-all duration-300 hover:shadow-xl overflow-hidden"
               >
-              {/* Top Left Border Line - Horizontal */}
+              
                 <div
                   className="absolute top-0 left-0 w-0 h-[3px] group-hover:w-16 transition-all duration-300 ease-in-out"
                   style={{ backgroundColor: accentColor }}
@@ -131,7 +131,7 @@ const DeepLinkingFeatures = () => {
                   {feature.title}
                 </h3>
 
-                <p className="text-gray-700 leading-relaxed text-[0.95rem] font-normal">
+                <p className="text-gray-700 leading-relaxed text-sm md:text-base font-normal">
                   {feature.description}
                 </p>
 
