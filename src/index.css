@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@keyframes runX {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes runY {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-runX {
+  animation: runX 2s linear infinite;
+  
+}
+
+.animate-runY {
+  animation: runY 2s linear infinite;
+  
+}
+
