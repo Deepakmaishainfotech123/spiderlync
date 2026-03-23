@@ -209,34 +209,34 @@ const About = () => {
             </div>
 
             <div className="flex flex-wrap gap-2">
-              <div class="group relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
-                <div class="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
-                  <span class="text-xs md:text-sm font-medium transition-all duration-300">
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
+                <div className="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
+                  <span className="text-xs md:text-sm font-medium transition-all duration-300">
                     Universal Links
                   </span>
                 </div>
               </div>
-              <div class="group relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
-                <div class="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
-                  <span class="text-xs md:text-sm font-medium  transition-all duration-300">
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
+                <div className="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
+                  <span className="text-xs md:text-sm font-medium  transition-all duration-300">
                     App Links
                   </span>
                 </div>
               </div>
-              <div class="group relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
-                <div class="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
-                  <span class="text-xs md:text-sm font-medium  transition-all duration-300">
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
+                <div className="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
+                  <span className="text-xs md:text-sm font-medium  transition-all duration-300">
                     Deferred Deep Links
                   </span>
                 </div>
               </div>
-              <div class="group relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
-                <div class="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
-                  <span class="text-xs md:text-sm font-medium  transition-all duration-300">
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
+                <div className="relative bg-white border border-gray-200 group-hover:border-transparent rounded-full px-5 py-2.5 transition-all duration-300 hover:shadow-lg">
+                  <span className="text-xs md:text-sm font-medium  transition-all duration-300">
                     Contextual Routing
                   </span>
                 </div>

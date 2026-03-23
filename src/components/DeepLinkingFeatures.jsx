@@ -131,7 +131,7 @@ const DeepLinkingFeatures = () => {
                   {feature.title}
                 </h3>
 
-                <p className="text-gray-700 leading-relaxed text-sm md:text-base font-normal">
+                <p className="text-gray-700 leading-relaxed text-sm md:text-sm font-normal">
                   {feature.description}
                 </p>
 

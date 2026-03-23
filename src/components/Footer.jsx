@@ -22,13 +22,13 @@ import {
   Headphones,
   Birdhouse,
 } from "lucide-react";
-import spyderlync from "../assets/Spider_Lync_Logo-.png";
+import spyderlync from "../assets/Spider_Lync_Logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const companyLinks = [
-    {name:"Home",href:"/",icon:Birdhouse},
+    { name: "Home", href: "/", icon: Birdhouse },
     { name: "About Us", href: "/about", icon: Users },
     { name: "Blog", href: "/blog", icon: MessageCircle },
     { name: "Contact", href: "/contact", icon: Mail },

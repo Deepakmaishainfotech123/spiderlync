@@ -1,4 +1,7 @@
 @import "tailwindcss";
+
+/* Enable class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
 @keyframes runX {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(100%); }
