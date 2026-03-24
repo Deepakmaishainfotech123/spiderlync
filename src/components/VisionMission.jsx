@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Eye, Target, Rocket, Heart, Users, Zap } from "lucide-react";
+import { Eye, Target, Rocket, Heart, Users, Zap, Sparkles } from "lucide-react";
 
 const VisionMission = () => {
   const visionPoints = [
@@ -50,7 +50,7 @@ const VisionMission = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16"
         >
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
@@ -71,7 +71,7 @@ const VisionMission = () => {
               Mission
             </span>
           </h1>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-xl mx-auto">
             Guiding principles that drive us to create exceptional experiences
             and deliver value to our customers
           </p>
@@ -85,13 +85,17 @@ const VisionMission = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="mb-6">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <Eye className="w-6 h-6 text-[#9122cb]" />
-                <span className="text-sm font-semibold text-[#9122cb] uppercase tracking-wide">
-                  Our Vision
-                </span>
+              <div className="p-[1.5px] rounded-2xl w-fit bg-gradient-to-r from-[#9122cb] to-[#e47b63] mb-3">
+                <div className="flex items-center gap-2 rounded-2xl bg-white px-2 py-1">
+                  <div className="w-5 h-5 rounded-lg bg-gradient-to-br from-[#9122cb] to-[#e47b63] flex items-center justify-center">
+                    <Sparkles className="w-3 h-3 text-white" />
+                  </div>
+                  <span className="text-[13px] font-medium text-gray-600">
+                    Our Vision
+                  </span>
+                </div>
               </div>
-              <h2 className="cursor-hover text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="cursor-hover text-3xl font-bold text-gray-900 mb-4 w-fit">
                 Shaping the future of digital connections
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
@@ -179,11 +183,15 @@ const VisionMission = () => {
             className="order-1 lg:order-2"
           >
             <div className="mb-6">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <Target className="w-6 h-6 text-[#e47b63]" />
-                <span className="text-sm font-semibold text-[#e47b63] uppercase tracking-wide">
-                  Our Mission
-                </span>
+              <div className="p-[1.5px] rounded-2xl w-fit bg-gradient-to-r from-[#9122cb] to-[#e47b63] mb-3">
+                <div className="flex items-center gap-2 rounded-2xl bg-white px-2 py-1">
+                  <div className="w-5 h-5 rounded-lg bg-gradient-to-br from-[#9122cb] to-[#e47b63] flex items-center justify-center">
+                    <Sparkles className="w-3 h-3 text-white" />
+                  </div>
+                  <span className="text-[13px] font-medium text-gray-600">
+                    Our Mission
+                  </span>
+                </div>
               </div>
               <h2 className="cursor-hover text-3xl font-bold text-gray-900 mb-4">
                 Empowering businesses through intelligent links

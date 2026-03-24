@@ -27,7 +27,7 @@ const About = () => {
                 </span>
               </div>
             </div>
-            <h1 className="cursor-hover lg:text-4xl text-xl md:text-2xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="cursor-hover w-fit lg:text-4xl text-xl md:text-2xl font-bold text-gray-900 mb-6 leading-tight">
               Simplifying DeepLinking for
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9122cb] to-[#e47b63]">
