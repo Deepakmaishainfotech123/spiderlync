@@ -15,12 +15,12 @@ const Cursor = () => {
       });
     };
 
-    let activeEl = null; // 👈 track current hovered element
+    let activeEl = null; 
 
     const handleMouseMove = (e) => {
       const target = e.target.closest(".cursor-hover");
 
-      // 👇 ENTER
+    
       if (target && target !== activeEl) {
         activeEl = target;
 
@@ -32,7 +32,7 @@ const Cursor = () => {
         });
       }
 
-      // 👇 LEAVE
+    
       if (!target && activeEl) {
         activeEl = null;
 

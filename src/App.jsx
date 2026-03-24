@@ -10,6 +10,7 @@ import Body from './Body'
 import Contact from './components/Contact'
 import Cursor from './components/Cursor'
 import Check from './components/Check'
+import Learning from './components/Learning'
 
 const App = () => {
     const theme = useThemeStore((state) => state.theme);
@@ -25,6 +26,7 @@ const App = () => {
         
       <Route base="/" element={<Body/>}>
       <Route path='/' element={<About/>}/>
+      
       <Route path='/check' element={<Check/>}/>
       <Route path='/contact' element={<Contact/>}/>
       </Route>

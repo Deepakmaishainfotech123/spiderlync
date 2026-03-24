@@ -43,7 +43,7 @@ const VisionMission = () => {
   ];
 
   return (
-    <div className="bg-white py-20 md:py-28 w-full overflow-x-hidden">
+    <div className="bg-white py-8 w-full overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ y: 40, opacity: 0 }}
@@ -98,7 +98,7 @@ const VisionMission = () => {
               <h2 className="cursor-hover text-3xl font-bold text-gray-900 mb-4 w-fit">
                 Shaping the future of digital connections
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
                 We envision a world where every link tells a story, every click
                 creates value, and every connection drives meaningful outcomes.
                 Our vision is to become the global standard for intelligent link
@@ -127,7 +127,7 @@ const VisionMission = () => {
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">
                         {point.title}
                       </h3>
-                      <p className="text-gray-600">{point.description}</p>
+                      <p className="text-gray-600 text-sm md:text-base">{point.description}</p>
                     </div>
                   </motion.div>
                 );
@@ -196,7 +196,7 @@ const VisionMission = () => {
               <h2 className="cursor-hover text-3xl font-bold text-gray-900 mb-4">
                 Empowering businesses through intelligent links
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
                 Our mission is to democratize advanced linking technology,
                 making it accessible and valuable for businesses of all sizes.
                 We're committed to continuous innovation, exceptional service,
@@ -225,7 +225,7 @@ const VisionMission = () => {
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">
                         {point.title}
                       </h3>
-                      <p className="text-gray-600">{point.description}</p>
+                      <p className="text-gray-600 text-sm md:text-base">{point.description}</p>
                     </div>
                   </motion.div>
                 );

@@ -9,13 +9,15 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import VisionMission from "./VisionMission";
+import EcosystemApproach from "./EcosystemApproach";
+import StatsComponent from "./StatsComponent";
 
 const About = () => {
   return (
    <>
-    <div className="bg-white min-h-screen">
+    <div className="bg-white ">
       <div className="relative overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="max-w-3xl">
             <div className="p-[1.5px] rounded-2xl w-fit bg-gradient-to-r from-[#9122cb] to-[#e47b63] mb-4">
               <div className="flex items-center gap-2 rounded-2xl bg-white px-2 py-1">
@@ -44,7 +46,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="relative mb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 auto-rows-[200px]">
             <motion.div
@@ -276,6 +278,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    <StatsComponent/>
+    <EcosystemApproach/>
 
     <VisionMission/>
 
