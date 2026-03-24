@@ -23,6 +23,7 @@ import {
   Birdhouse,
 } from "lucide-react";
 import spyderlync from "../assets/Spider_Lync_Logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -102,9 +103,9 @@ const Footer = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 pb-8">
-        {/* Main Grid */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
-          {/* Company Info Section */}
+        
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <img
@@ -120,21 +121,21 @@ const Footer = () => {
             </p>
             <div className="flex gap-3 mb-6">
               {socialLinks.map((social, index) => (
-                <a
+                <Link
                   key={index}
-                  href={social.href}
+                  to={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 ${social.color} hover:scale-110 hover:shadow-lg`}
                   aria-label={social.label}
                 >
                   <social.icon className="w-4 h-4" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
 
-          {/* Company Links */}
+         
           <div>
             <h4 className="font-semibold text-white mb-4 text-sm sm:text-base flex items-center gap-2">
               <Briefcase className="w-4 h-4 text-purple-400" />
@@ -143,20 +144,20 @@ const Footer = () => {
             <ul className="space-y-3">
               {companyLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="group inline-flex items-center gap-2 text-gray-400 hover:text-purple-400 text-sm transition-colors duration-200"
                   >
                     <link.icon className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-all duration-200" />
                     {link.name}
                     <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-200" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Products Links */}
+         
           <div>
             <h4 className="font-semibold text-white mb-4 text-sm sm:text-base flex items-center gap-2">
               <Code className="w-4 h-4 text-purple-400" />

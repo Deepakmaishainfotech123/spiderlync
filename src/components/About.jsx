@@ -8,9 +8,11 @@ import {
   Fingerprint
 } from "lucide-react";
 import { motion } from "framer-motion";
+import VisionMission from "./VisionMission";
 
 const About = () => {
   return (
+   <>
     <div className="bg-white min-h-screen">
       <div className="relative overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
@@ -25,7 +27,7 @@ const About = () => {
                 </span>
               </div>
             </div>
-            <h1 className="lg:text-4xl text-xl md:text-2xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="cursor-hover lg:text-4xl text-xl md:text-2xl font-bold text-gray-900 mb-6 leading-tight">
               Simplifying DeepLinking for
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9122cb] to-[#e47b63]">
@@ -274,6 +276,11 @@ const About = () => {
         </div>
       </div>
     </div>
+
+    <VisionMission/>
+
+    
+   </>
   );
 };
 

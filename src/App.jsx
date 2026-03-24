@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react'
 import DeepLinkingFeatures from './components/DeepLinkingFeatures'
 import About from './components/About'
-import Footer from './components/Footer'
+
 import Tesst from './components/Tesst'
-import Header from './components/Header'
 import Plans from './components/Plans'
 import { useThemeStore } from "./store/useThemeStore";
+import { Route, Routes } from 'react-router-dom'
+import Body from './Body'
+import Contact from './components/Contact'
+import Cursor from './components/Cursor'
+import Check from './components/Check'
 
 const App = () => {
     const theme = useThemeStore((state) => state.theme);
@@ -16,12 +20,16 @@ const App = () => {
   }, [theme]);
   return (
     <div>
-      <Header/>
-      {/* <Tesst/> */}
-      <About/>
-      <DeepLinkingFeatures/>
-      <Plans/>
-      <Footer/>
+        <Cursor />
+     <Routes>
+        
+      <Route base="/" element={<Body/>}>
+      <Route path='/' element={<About/>}/>
+      <Route path='/check' element={<Check/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      </Route>
+     </Routes>
+
     </div>
   )
 }

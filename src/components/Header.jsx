@@ -170,14 +170,12 @@ const Header = () => {
                   )}
 
                   <div className="relative group">
-                   
                     <span
                       className="absolute -bottom-10 left-1/2 -translate-x-1/2 px-2 py-1 
                         text-xs text-white bg-gray-900 dark:bg-gray-700 rounded 
                         opacity-0 group-hover:opacity-100 transition-opacity 
                         pointer-events-none whitespace-nowrap"
                     >
-                     
                       <span
                         className="absolute -top-1 left-1/2 -translate-x-1/2 
                         w-2 h-2 bg-gray-900 dark:bg-gray-700 rotate-45"
@@ -209,13 +207,8 @@ const Header = () => {
 
           <div className="fixed right-0 top-0 h-full w-full max-w-sm bg-white shadow-xl overflow-y-auto animate-slideInRight z-50">
             <div className="p-6">
-              <div className="flex justify-between items-center mb-8">
-                <img
-                  src={spyderlync}
-                  alt="Spider Lync"
-                  className="h-8 w-auto object-contain"
-                />
-
+              
+              <div className="flex justify-end mb-4">
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="p-2 rounded-lg text-gray-600 hover:text-purple-600 hover:bg-gray-100"
@@ -223,7 +216,6 @@ const Header = () => {
                   <X className="w-6 h-6" />
                 </button>
               </div>
-
               <div className="space-y-1">
                 {Object.entries(NAVIGATION_ITEMS).map(([key, item]) => (
                   <div key={key}>
