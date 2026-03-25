@@ -254,19 +254,19 @@ const Footer = () => {
 
             <div className="flex flex-wrap items-center gap-4 sm:gap-6">
               <a
-                href="/privacy"
+                href="/spiderlync/"
                 className="text-xs text-gray-400 hover:text-purple-400 transition-colors"
               >
                 Privacy Policy
               </a>
               <a
-                href="/terms"
+                href="/spiderlync/"
                 className="text-xs text-gray-400 hover:text-purple-400 transition-colors"
               >
                 Terms of Service
               </a>
               <a
-                href="/cookies"
+                href="/spiderlync/"
                 className="text-xs text-gray-400 hover:text-purple-400 transition-colors"
               >
                 Cookie Policy
