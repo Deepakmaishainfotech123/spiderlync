@@ -43,23 +43,32 @@ const StatsComponent = () => {
   );
 
   const animateValue = useCallback((id, end, isDecimal) => {
-    let start = 0;
+    let startTime = null;
     const duration = 1500;
-    const step = end / (duration / 20);
 
-    const timer = setInterval(() => {
-      start += step;
+    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const easedProgress = easeOutCubic(progress);
+
+      const currentValue = end * easedProgress;
 
       setCounts((prev) => ({
         ...prev,
-        [id]: isDecimal ? start : Math.floor(start),
+        [id]: isDecimal ? currentValue : Math.floor(currentValue),
       }));
 
-      if (start >= end) {
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
         setCounts((prev) => ({ ...prev, [id]: end }));
-        clearInterval(timer);
       }
-    }, 20);
+    };
+
+    requestAnimationFrame(animate);
   }, []);
 
   useEffect(() => {
@@ -77,7 +86,7 @@ const StatsComponent = () => {
       const decimalPlaces = stat.id === "links" ? 1 : 2;
       val = value.toFixed(decimalPlaces);
     } else {
-      val = Math.floor(value); 
+      val = Math.floor(value);
     }
     return `${stat.prefix || ""}${val}${stat.suffix}`;
   }, []);

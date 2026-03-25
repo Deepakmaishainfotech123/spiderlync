@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import VisionMission from "./VisionMission";
 import EcosystemApproach from "./EcosystemApproach";
 import StatsComponent from "./StatsComponent";
+import Plans from "./Plans";
 
 const About = () => {
   return (
@@ -278,9 +279,10 @@ const About = () => {
         </div>
       </div>
     </div>
-    <StatsComponent/>
     <EcosystemApproach/>
-
+    <StatsComponent/>
+    
+<Plans/>
     <VisionMission/>
 
     
