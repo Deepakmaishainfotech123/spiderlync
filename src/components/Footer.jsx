@@ -29,25 +29,25 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const companyLinks = [
-    { name: "Home", href: "/", icon: Birdhouse },
-    { name: "About Us", href: "/about", icon: Users },
-    { name: "Blog", href: "/blog", icon: MessageCircle },
-    { name: "Contact", href: "/contact", icon: Mail },
+    { name: "Home", href: "/spiderlync/", icon: Birdhouse },
+    { name: "About Us", href: "/spiderlync/about", icon: Users },
+    { name: "Blog", href: "/spiderlync/", icon: MessageCircle },
+    { name: "Contact", href: "/spiderlync/contact", icon: Mail },
   ];
 
   const productLinks = [
-    { name: "Features", href: "/features", icon: Zap },
-    { name: "Pricing", href: "/pricing", icon: TrendingUp },
-    { name: "Documentation", href: "/docs", icon: Code },
-    { name: "API Reference", href: "/api", icon: Cpu },
+    { name: "Features", href: "/spiderlync/", icon: Zap },
+    { name: "Pricing", href: "/spiderlync/", icon: TrendingUp },
+    { name: "Documentation", href: "/spiderlync/", icon: Code },
+    { name: "API Reference", href: "/spiderlync/", icon: Cpu },
   ];
 
   const resourcesLinks = [
-    { name: "Help Center", href: "/help" },
-    { name: "Community", href: "/community" },
-    { name: "Security", href: "/security" },
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
+    { name: "Help Center", href: "/spiderlync/" },
+    { name: "Community", href: "/spiderlync/" },
+    { name: "Security", href: "/spiderlync/" },
+    { name: "Privacy Policy", href: "/spiderlync/" },
+    { name: "Terms of Service", href: "/spiderlync/" },
   ];
 
   const socialLinks = [
@@ -95,7 +95,7 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-gray-900 text-white overflow-hidden">
-      {/* Animated Background Blobs */}
+    
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000" />
